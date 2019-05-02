@@ -1,0 +1,90 @@
+//ROMILA BASAV
+//FYE213
+//TRANSPOSE OF MATRIX USING OOPS
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+class star
+{
+private:
+int matrix[10][10],transmatrix[10][10],r,c,i,j;
+public:
+void get();
+void display();
+void transpose();
+};
+void star::get()
+{
+  cout<<"enter the order of matrix"<<endl;
+  cin>>r>>c;
+  cout<<"ENTER THE MATRIX";
+
+  for(i=0;i<r;i++)
+  {
+    for(j=0;j<c;j++)
+    {
+      cin>>matrix[i][j];
+    }
+  }
+
+}
+void star::transpose()
+{
+ for(i=0;i<r;i++)
+ {
+  for(j=0;j<c;j++)
+  {
+   transmatrix[j][i]=matrix[i][j];
+  }
+ }
+}
+void star::display()
+{
+
+for(i=0;i<c;i++)
+{
+for(j=0;j<r;j++)
+{
+ cout<<transmatrix[i][j]<<" ";
+ if(j==r-1)
+ cout<<endl;
+}
+}}
+void main()
+{
+clrscr();
+star s;
+s.get();
+s.transpose();
+s.display();
+getch();
+}
+
+
+
+OUTPUT=
+enter the order of matrix
+2 2                                                                             
+ENTER THE MATRIX                                                                
+45 67                                                                           
+87 34                                                                           
+TRANSPOSE=TRANSPOSE=TRANSPOSE=TRANSPOSE=45 87                                   
+67 34                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
